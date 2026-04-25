@@ -11,7 +11,7 @@ const userSchema = new Schema({
         trim:true,
 
     },
-    emial:{
+    email:{
         type:String,
         required:true,
         unique:true,
@@ -40,7 +40,7 @@ const userSchema = new Schema({
             ref:"Video"
         }
     ],
-    passsword:{
+    password:{
         type:String,
         required:[true,'Password is required']
 
