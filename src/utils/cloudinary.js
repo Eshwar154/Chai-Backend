@@ -21,10 +21,10 @@ const uploadOnCloudinary = async (localFilePath) => {
       resource_type: "auto",
     });
 
-    console.log("Uploaded:", response.secure_url);
+    //console.log("Uploaded:", response.secure_url);
 
     // delete only AFTER success
-    fs.unlinkSync(resolvedPath);
+    fs.unlinkSync(localFilePath);
 
     return response;
   } catch (error) {
